@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preload" href="./fonts/Monoid-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <title>Monoid</title>
+    <style> * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Monoid';
+        }
+        body {
+            background-color: #0D0D0D;
+            color: #333;
+            line-height: 1.6;
+            padding: 32px;
+            max-width: 1440px;
+            margin: 0 auto;
+            font-family: 'Monoid', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        :root {
+  --gap-x: 56px;
+  --gap-y: 120px;
+  --tile: 360px;
+  --radius: 12px;
+  --bg-tile: #0D0D0D;
+}
+
+:root{
+  --gap-x: 56px;
+  --gap-y: 120px;
+  --tile-min: 320px;
+  --tile-max: 360px;
+}
+
+
+.media{
+  display:grid;
+  grid-template-columns:
+    repeat(2, minmax(var(--tile-min), var(--tile-max)) 1fr);
+  gap: var(--gap-y) var(--gap-x);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
+  align-items: end;
+}
+.media { column-gap: 24px; }
+
+
+.media__img:nth-of-type(odd)  { grid-column: 1; }
+.media__body:nth-of-type(odd) { grid-column: 2; }
+.media__img:nth-of-type(even) { grid-column: 3; }
+.media__body:nth-of-type(even){ grid-column: 4; }
+
+
+.media__img{
+  margin: 0;
+  width: 100%;
+  max-width: 330px;
+  max-height: 330px;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0D0D0D;
+}
+.media__img img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.media__body{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  min-height: 100%; 
+}
+.media__body h3{
+  margin: 0 0 10px;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+}
+.media__body p{
+  margin: 0;
+  max-width: 34ch;
+  line-height: 1.6;
+  color: #d9d9d9;
+}
+
+.site-footer{
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  padding: 300px 16px;
+  background: #0D0D0D;
+}
+
+.footer-mark{
+  display: block;
+  width: clamp(180px, 22vw, 420px);
+  height: auto;
+}
+
+.icon{
+  display: block;
+  margin: 0 0 100px 0;
+}
+
+
+
+</style>
+</head>
+
+
+    <img src="image/palka.svg">
+    <h6>Собранный, как строка кода. Спокойный, как выверенный ритм.</h6>
+    <br>
+    <img src="image/Monoid logo.svg">
+    <br>
+    <br>
+    <h4>Моноширинный. Ровный, как бит. Читаемый, как хороший текст.</h4>
+    <img src="image/palka.svg">
+    <br>
+    <br>
+    <br>
+    <img src="image/knopka b.svg">
+    <img src="image/knopka ch.svg">
+    <br>
+    <br>
+    <img src="image/palka 2.svg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>четыре<br>релиза</h1>
+    <br>
+    <br>
+    
+<section class="media">
+  <figure class="media__img">
+    <img src="image/italic.svg" alt="Italic">
+  </figure>
+  <div class="media__body">
+    <h3>флоу и нюанс</h3>
+    <p>Комментарии, ремарки,<br>подписи, эмоциональные<br>выделения</p>
+  </div>
+
+  <figure class="media__img">
+    <img src="image/regular.svg" alt="Regular">
+  </figure>
+  <div class="media__body">
+    <h3>базовый groove</h3>
+    <p>Универсальный вес<br>для повседневных<br>текстов, интерфейсов<br>и кода</p>
+  </div>
+
+  <figure class="media__img">
+    <img src="image/bold.svg" alt="Bold">
+  </figure>
+  <div class="media__body">
+    <h3>хедлайнер</h3>
+    <p>Контраст, акценты,<br>заголовки, кнопки,<br>бейджи в UI</p>
+  </div>
+
+    <figure class="media__img">
+    <img src="image/retina.svg" alt="Retina">
+  </figure>
+  <div class="media__body">
+    <h3>ремикс ценителей</h3>
+    <p>Специально для фанатов<br>apple</p>
+  </div>
+</section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Разнообразие<br>стилей</h1>
+    <p>И возможность настройки с оптимизацией под себя</p>
+    <img class="icon" src="image/xz.svg">
+    <h1>новая<br>Коллекция мерча</h1>
+    <br>
+    <img src="image/merch.svg" class="icon">
+    <h1>расписание<br>туров</h1>
+    <p>Шрифт отлично ведет себя в коде и таблицах, оставаясь читаемям даже с маленьким марджином</p>
+    <img class="icon" src="image/tablicha.svg">
+    <br>
+    <h1>Бронирование<br>билета</h1>
+    <p>Полностью бесплатный для личного и коммерческого использования</p>
+    <img class="icon" src="image/bilet.svg">
+
+    <footer class="site-footer">
+  <img src="image/c.svg" alt="2025 © MONOID" class="footer-mark">
+</footer>
+
+</body>
+</html>

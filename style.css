@@ -1,0 +1,69 @@
+
+@font-face {
+  font-family: 'Monoid'; 
+  src: url('./fonts/Monoid-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monoid'; 
+  src: url('./fonts/Monoid-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monoid'; 
+  src: url('./fonts/Monoid-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monoid'; 
+  src: url('./fonts/Monoid-Retina.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Monoid';
+  font-weight: 700;
+  color: #F6F6F6;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase ;
+  margin: 0 0 40px 0; 
+}
+
+h6 {
+  font-family: 'Monoid';
+  font-weight: 400;
+  color: #B77FDB;
+  font-size: 34px;
+}
+h3 {
+  font-family: 'Monoid';
+  font-weight: 700;
+  color: #F6F6F6;
+  font-size: 24px;
+}
+h4 {
+  font-family: 'Monoid';
+  font-weight: 400;
+  color: #5C96FF;
+  font-size: 34px;
+}
+p {
+    font-family: 'Monoid';
+    font-weight: 400;
+    color: #F6F6F6; 
+    font-size: 20;
+    line-height: 32px;
+    margin: 0 0 60px 0;
+}
