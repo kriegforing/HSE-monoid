@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Monoid'; 
-  src: url('./fonts/Monoid-Regular.ttf') format('ttf');
+  src: url('./fonts/Monoid-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Monoid'; 
-  src: url('./fonts/Monoid-Bold.ttf') format('ttf');
+  src: url('./fonts/Monoid-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Monoid'; 
-  src: url('./fonts/Monoid-Italic.ttf') format('ttf');
+  src: url('./fonts/Monoid-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'Monoid'; 
-  src: url('./fonts/Monoid-Retina.ttf') format('ttf');
+  src: url('./fonts/Monoid-Retina.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -67,3 +67,4 @@ p {
     line-height: 32px;
     margin: 0 0 60px 0;
 }
+
